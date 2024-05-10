@@ -1,0 +1,44 @@
+body {
+    background: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 100vh; /* Full viewport height */
+    color: #fff; /* Light text color */
+    font-family: Arial, sans-serif; /* Font style */
+    flex-direction: column; /* Align children vertically */
+    margin: 0; /* Removing default margin */
+}
+
+/* Styling the buttons */
+button {
+    background-color: #6064f4; /* Light blue background */
+    border: none; /* No border */
+    color: white; /* White text */
+    padding: 15px 32px; /* Padding around text */
+    text-align: center; /* Center text inside button */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Necessary for dimensions */
+    font-size: 20px; /* Larger text size */
+    margin: 10px; /* Spacing between buttons */
+    cursor: pointer; /* Cursor indication for clickable element */
+    width: 200px;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #3f429c; /* Darker shade of blue on hover */
+}
+
+/* Container for buttons to manage layout */
+.button-container {
+    display: flex; /* Using flexbox to layout buttons */
+    justify-content: center; /* Center buttons horizontally */
+}
+
+canvas {
+    flex-shrink: 0;
+}
