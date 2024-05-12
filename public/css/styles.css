@@ -11,8 +11,13 @@ body {
     margin: 0; /* Removing default margin */
 }
 
-/* Styling the buttons */
-button {
+/* Header style */
+.title-header {
+    margin-bottom: 20px; /* Space between header and buttons */
+}
+
+/* Styling the big buttons */
+.big-button {
     background-color: #6064f4; /* Light blue background */
     border: none; /* No border */
     color: white; /* White text */
@@ -28,28 +33,79 @@ button {
     border-radius: 10px; /* Rounded corners */
 }
 
-/* Hover effect for buttons */
-button:hover {
+/* Hover effect for big buttons */
+.big-button:hover {
+    background-color: #3f429c; /* Darker shade of blue on hover */
+}
+
+/* Container for buttons to manage layout */
+.big-button-container {
+    display: flex; /* Using flexbox to layout buttons */
+    justify-content: center; /* Center buttons horizontally */
+}
+
+/* Styling the small buttons */
+.small-button {
+    background-color: #6064f4; /* Light blue background */
+    border: none; /* No border */
+    color: white; /* White text */
+    padding: 10px; /* Padding around text */
+    text-align: center; /* Center text inside button */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Necessary for dimensions */
+    font-size: 20px; /* Larger text size */
+    margin: 10px; /* Spacing between buttons */
+    cursor: pointer; /* Cursor indication for clickable element */
+    width: 100px;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Hover effect for small buttons */
+.small-button:hover {
     background-color: #3f429c; /* Darker shade of blue on hover */
 }
 
 /* Container for buttons to manage layout */
 .button-container {
     display: flex; /* Using flexbox to layout buttons */
-
     justify-content: center; /* Center buttons horizontally */
 }
 
-/* Header style */
-h1 {
-    margin-bottom: 20px; /* Space between header and buttons */
-}
-
 .iframe-container {
+    display: none;
     position: fixed;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
     width: 350px; /* Match the width of the iframe */
     height: 100vh; /* Match the height of the iframe */
+}
+
+.emoji {
+    font-size: 96px; /* Adjust the size as needed */
+    text-align: left; /* Center the emoji */
+    display: block; /* Makes the emoji take a full line */
+    animation: float 6s ease-in-out infinite; /* Apply the animation */
+}
+
+.social-text {
+    text-align: center;
+    border-radius: 10px;
+    height: 20px;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translate(0, -10px);
+    }
+    50% {
+        transform: translate(0, 10px);
+    }
+}
+
+@media (min-width: 768px) {
+    .iframe-container {
+        display: block;
+    }
 }
