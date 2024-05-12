@@ -18,35 +18,27 @@ body {
 
 /* Styling the big buttons */
 .big-button {
-    background-color: #6064f4; /* Light blue background */
     border: none; /* No border */
     color: white; /* White text */
-    padding: 15px 32px; /* Padding around text */
+    padding: 20px; /* Padding around text */
     text-align: center; /* Center text inside button */
     text-decoration: none; /* No underline */
     display: inline-block; /* Necessary for dimensions */
     font-size: 20px; /* Larger text size */
     margin: 10px; /* Spacing between buttons */
     cursor: pointer; /* Cursor indication for clickable element */
-    width: 200px;
+    width: 150px;
     transition: background-color 0.3s; /* Smooth transition for hover effect */
     border-radius: 10px; /* Rounded corners */
 }
 
 /* Hover effect for big buttons */
 .big-button:hover {
-    background-color: #3f429c; /* Darker shade of blue on hover */
-}
-
-/* Container for buttons to manage layout */
-.big-button-container {
-    display: flex; /* Using flexbox to layout buttons */
-    justify-content: center; /* Center buttons horizontally */
+    background-color: #838383; /* Darker shade of blue on hover */
 }
 
 /* Styling the small buttons */
 .small-button {
-    background-color: #6064f4; /* Light blue background */
     border: none; /* No border */
     color: white; /* White text */
     padding: 10px; /* Padding around text */
@@ -63,13 +55,21 @@ body {
 
 /* Hover effect for small buttons */
 .small-button:hover {
-    background-color: #3f429c; /* Darker shade of blue on hover */
+    background-color: #838383; /* Darker shade of blue on hover */
 }
 
 /* Container for buttons to manage layout */
 .button-container {
     display: flex; /* Using flexbox to layout buttons */
     justify-content: center; /* Center buttons horizontally */
+}
+
+.blue-button {
+    background-color: #6064f4; /* Light blue background */
+}
+
+.red-button {
+    background-color: #f44336; /* Red background */
 }
 
 .iframe-container {
